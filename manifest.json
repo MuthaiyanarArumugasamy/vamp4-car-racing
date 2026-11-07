@@ -1,0 +1,9 @@
+{
+  "name": "VAMP4 Car Racing",
+  "short_name": "VAMP4 Racing",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#080d18",
+  "theme_color": "#080d18",
+  "description": "A mobile-friendly arcade car racing game."
+}

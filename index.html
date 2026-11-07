@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="theme-color" content="#080d18">
+  <meta name="description" content="VAMP4 Car Racing — an exciting mobile-friendly arcade racing game.">
+  <title>VAMP4 Car Racing</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">V4</span><div><strong>VAMP4</strong><small>CAR RACING</small></div></div>
+      <button id="soundBtn" class="icon-btn" aria-label="Toggle sound">🔊</button>
+    </header>
+
+    <section class="hud" aria-label="Game statistics">
+      <div><small>SCORE</small><strong id="score">000000</strong></div>
+      <div><small>BEST</small><strong id="best">000000</strong></div>
+      <div><small>SPEED</small><strong><span id="speed">0</span><em> km/h</em></strong></div>
+    </section>
+
+    <section class="game-wrap">
+      <canvas id="game" width="480" height="760" aria-label="Car racing game"></canvas>
+      <div id="overlay" class="overlay">
+        <div class="panel">
+          <div class="mini-logo">VAMP4</div>
+          <h1 id="overlayTitle">READY TO RACE?</h1>
+          <p id="overlayText">Dodge traffic, survive as long as you can, and beat your best score.</p>
+          <button id="startBtn" class="primary-btn">START RACING</button>
+          <p class="help">Use ← → or A / D • On mobile, use the steering buttons</p>
+        </div>
+      </div>
+      <div class="game-tag">VAMP4 • ARCADE SERIES</div>
+    </section>
+
+    <nav class="controls" aria-label="Driving controls">
+      <button id="leftBtn" class="steer" aria-label="Steer left">◀</button>
+      <button id="pauseBtn" class="pause" aria-label="Pause game">Ⅱ</button>
+      <button id="rightBtn" class="steer" aria-label="Steer right">▶</button>
+    </nav>
+    <footer>VAMP4 CAR RACING <span>•</span> BUILT FOR THE ROAD</footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
